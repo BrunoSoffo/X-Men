@@ -4,6 +4,19 @@ body {
     color: #fff;
 }
 
+body::before {
+    content: "";
+    background-image: url(../imagens/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.2;
+}
+
 .cabecalho {
     display: flex;
     justify-content: center;
@@ -13,6 +26,9 @@ body {
     display: flex;
     align-items: center;
     gap: 30px;
+    min-height: calc(100vh - 152px);
+    justify-content: center;
+    /* -152px é a altura do cebeçalho da página.  */
 }
 
 .selecao-de-personagens .lista-de-personagens {
@@ -64,4 +80,10 @@ personagem-selecionado {
     text-transform: uppercase;
 }
 
-
+.personagem-selecionado .descricao-personagem {
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 20px;
+    width: 420px;
+}
