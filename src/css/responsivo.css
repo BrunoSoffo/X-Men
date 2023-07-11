@@ -1,0 +1,16 @@
+@media (max-width: 1120px){
+    /* a linha acima define o parametro para q o novo estilo seja utilizado */
+    .cabecalho .logo {
+        max-width: 190px;
+    }
+
+    .selecao-de-personagens {
+        flex-direction: column-reverse;
+        max-width: 430px;
+        margin: 0 auto;
+    }
+
+    .selecao-de-personagens .personagens {
+        margin-top: 37px;
+    }
+}
